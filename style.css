@@ -73,6 +73,7 @@ main {
   padding: 29.4rem auto auto;
   width: 32rem;
   margin: auto;
+  gap: 3.6rem;
 }
 
 p {
@@ -115,7 +116,7 @@ p {
   padding: 0 2.4rem;
   display: inline-flex;
   height: 3.5rem;
-	width: 11.2rem;
+  width: 11.2rem;
   align-items: center;
   width: fit-content;
   animation: topdown 1s;
@@ -144,4 +145,73 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* desktop */
+
+@media (min-width: 700px) {
+  body::before {
+    content: "";
+    width: 37.7rem;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: var(--bg-top);
+  }
+
+  .page {
+    max-width: 128rem;
+    display: grid;
+    grid-template-columns: 37.7rem 100%;
+  }
+
+  header img {
+    width: 21.4rem;
+    height: 16.7rem;
+    padding: 3.2rem auto;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    padding: 2.1rem;
+  }
+  .title h1 {
+    font-size: 4.8rem;
+  }
+
+  p {
+    font-family: "Roboto";
+    font-size: 2.4rem;
+    line-height: 2rem;
+    color: #ffffff;
+  }
+
+  /* main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 7.2rem 10.3rem 9.8rem 11rem;
+  }
+
+    main .card:nth-child(1){
+      grid-area: A;
+    }
+
+    main .card:nth-child(1){
+      grid-area: B;
+    }
+
+    main .card:nth-child(1){
+      grid-area: C;
+    }
+
+    main .card:nth-child(1){
+      grid-area: D;
+    } */
+
+
 }
