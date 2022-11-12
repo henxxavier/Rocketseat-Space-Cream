@@ -154,7 +154,8 @@ p {
 
 /* tablet */
 
-@media (min-width: 728px) {
+@media (min-width: 900px) {
+
   #text-desktop {
     display: none;
   }
@@ -190,7 +191,7 @@ p {
 }
 
 /* desktop */
-@media (min-width: 900px) {
+@media (min-width: 930px) {
 
   p {
     display: none;
@@ -206,9 +207,15 @@ p {
     height: 100vh;
   }
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   header {
     grid-area: header;
     max-width: 37.7rem;
+    max-height: 100%;
   }
 
   header img {
@@ -247,20 +254,25 @@ p {
   }
 
   main {
+
+    display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    padding: 3rem;
+    margin: auto;
     grid-area: main;
     background-color: #ffffff;
-    
   }
 
   .card-clone {
     display: initial;
   }
 
+
   .cards {
     display: grid;
-    margin: 0;
+    max-width: 80rem;
     gap: 3.2rem;
     grid-template-areas:
       "A B F"
