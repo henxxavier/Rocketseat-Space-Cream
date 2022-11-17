@@ -260,7 +260,6 @@ p {
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    padding: 3rem;
     margin: auto;
     grid-area: main;
     background-color: #ffffff;
@@ -282,7 +281,7 @@ p {
 
   .cards {
     display: grid;
-    max-width: 80rem;
+    max-width: 100%;
     gap: 3.2rem;
     grid-template-areas:
       "A B F"
@@ -316,8 +315,9 @@ p {
 
   .footer {
     display: initial;
-    margin: 5rem auto 4.6rem;
+    margin: 5rem auto auto;
     text-align: center;
+    justify-content: center;
     width: 59.2rem;
     height: 2.8rem;
   }
