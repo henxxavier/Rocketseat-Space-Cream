@@ -16,6 +16,10 @@
   --fc-span: #4a4e69;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 .page {
   margin: auto;
   display: grid;
@@ -79,7 +83,7 @@ p {
   width: 26.5rem;
   height: 7.5rem;
   font-family: "Palanquin";
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.5rem;
   color: var(--fc-texting);
 }
